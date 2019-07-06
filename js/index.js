@@ -1,9 +1,10 @@
 console.log("I'm connected!");
 
 let myDiv = document.querySelector('#thing');
-myDiv.innerHTML = "Blah";
+myDiv.innerHTML = "<h1> Blah </h1> ";
+myDiv.innerHTML += "<h2> kazam </h2>";
 
-function moveRect(x, y){
+function moveRect(x, y) {
 
 
     const theCanvas = document.getElementById("example");
@@ -24,13 +25,13 @@ function moveRect(x, y){
 
     // colors rectangle in the given color
     ctx.fillStyle = "red";
-    
+
     // given method that creates rectangle - ctx.fillRect(x, y, width, height)
     ctx.fillRect(x, y, 50, 50);
 
     x += 3;
-    if(x % 10 === 0){
-        y+=5;
+    if (x % 10 === 0) {
+        y += 5;
     }
 
     // calls itself every 30ms => RECURSIVE FUNCTION
