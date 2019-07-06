@@ -1,6 +1,10 @@
 console.log("I'm connected!");
 
+let myDiv = document.querySelector('#thing');
+myDiv.innerHTML = "Blah";
+
 function moveRect(x, y){
+
 
     const theCanvas = document.getElementById("example");
 
